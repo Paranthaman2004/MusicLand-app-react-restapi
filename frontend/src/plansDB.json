@@ -1,0 +1,26 @@
+[
+    {
+        "id":"2001",
+        "planName":"Basic",
+        "planName2":"Individual",
+        "price":119,
+        "upToLogin":1,
+        "offers":["Ad-free music listening","Download 10k songs","128kbps audio Quality"]
+    },
+    {
+        "id":"2002",
+        "planName":"Advanced",
+        "planName2":"Duo",
+        "price":169,
+        "upToLogin":2,
+        "offers":["For couples who live together","Ad-free music listening","Download 10k songs","256kbps audio Quality"]
+    },
+    {
+        "id":"2003",
+        "planName":"Premium",
+        "planName2":"Family",
+        "price":219,
+        "upToLogin":5,
+        "offers":["For family who live together","Block explicit music","Dolby Audio Support","Ad-free music listening","Download 100k songs","512kbps audio Quality"]
+    }
+]

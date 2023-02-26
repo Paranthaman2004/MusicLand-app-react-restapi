@@ -1,0 +1,24 @@
+@tailwind base;
+*::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: var(--primary);
+    border-radius: 5px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--secondary);
+    border-radius: 14px;
+    border: 3px solid var(--primary);
+  }
+  
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Noto+Sans+Tamil&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+  user-select: none;
+}
