@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 const EditSong = () => {
+  const { editSong, setEditSong } = useStates();
   const [id, setId] = useState("");
   const [title, setTitle] = useState("");
   const [movie, setMovie] = useState("");
@@ -33,7 +34,7 @@ const EditSong = () => {
     setMode(editSong?.mode);
     setYear(editSong?.year);
   }, [editSong]);
-  const { editSong, setEditSong } = useStates("");
+
   const handleUpdateSubmit = (e) => {
     e.preventDefault();
     axios
