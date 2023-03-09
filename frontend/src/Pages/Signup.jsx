@@ -7,6 +7,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import MusicNoteIcon from "@mui/icons-material/MusicNote";
 import { BiErrorCircle } from "react-icons/bi";
+import logo from '../Asserts/logo-black.png'
 const Singup = () => {
   const {
     gotoLoginPage,
@@ -45,10 +46,12 @@ const Singup = () => {
       />
       <div className="bg-white w-5/12 h-full flex justify-center items-center rounded-l-lg shadow-5xl ml-10 flex-col relative">
         <div className="font-alata flex items-center font-semibold text-4xl h-14 absolute top-3 left-0 ">
-          <MusicNoteIcon fontSize="10px" className="text-mp-violet ml-2 " />
+          {/* <MusicNoteIcon fontSize="10px" className="text-mp-violet ml-2 " /> */}
           <span className="text-mp-black">
-            Mu<span className="text-mp-violet">sick</span>
+            {/* Mu<span className="text-mp-violet">sick</span> */}
+<img className="w-52 object-contain" src={logo} alt="" />
           </span>
+
         </div>
         <div className="flex items-start flex-col mr-36 mt-10">
           <h1 className="text-3xl mb-2 font-semibold ">Join With Us</h1>

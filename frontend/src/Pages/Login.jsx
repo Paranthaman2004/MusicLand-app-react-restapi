@@ -7,7 +7,7 @@ import { useStates } from "../States";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import MusicNoteIcon from "@mui/icons-material/MusicNote";
-
+import logo from "../Asserts/logo-black.png";
 const Login = () => {
   const {
     handleLogin,
@@ -22,7 +22,7 @@ const Login = () => {
   const handleChange = (event) => {
     setChecked(event.target.checked);
   };
-  
+
   return (
     <div className="flex flex-row-reverse w-screen h-screen p-24 justify-center items-center">
       <ToastContainer
@@ -39,19 +39,23 @@ const Login = () => {
         className="text-base"
       />
       <div className="bg-white w-5/12 h-full flex justify-center items-center rounded-r-lg shadow-5xl flex-col relative">
-          <div className="font-alata flex items-center font-semibold text-4xl h-14 absolute top-3 left-0">
-            <MusicNoteIcon fontSize="10px" className="text-mp-violet ml-2 " />
-            <span className="text-mp-black">
-              Mu<span className="text-mp-violet">sick</span>
-            </span>
-          </div>
+        <div className="font-alata flex items-center font-semibold text-4xl h-14 absolute top-3 left-0">
+          {/* <MusicNoteIcon fontSize="10px" className="text-mp-violet ml-2 " /> */}
+          <span className="text-mp-black">
+            {/* Mu<span className="text-mp-violet">sick</span> */}
+            <img className="w-52 object-contain" src={logo} alt="" />
+          </span>
+        </div>
         <div className="flex items-start flex-col mr-36">
           <h1 className="text-3xl mb-2 font-semibold ">Welcome back</h1>
           <h4 className="text-xs text-slate-700">
             Welcome back! Please enter your details.
           </h4>
         </div>
-        <form className="flex flex-col items-start mt-5" onSubmit={SignInWithPass}>
+        <form
+          className="flex flex-col items-start mt-5"
+          onSubmit={SignInWithPass}
+        >
           <span className="mb-5 ">
             <TextField
               className="w-72 mb-5"

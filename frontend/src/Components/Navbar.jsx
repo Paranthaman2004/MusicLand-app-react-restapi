@@ -9,6 +9,7 @@ import AddBoxIcon from "@mui/icons-material/AddBox";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { Button } from "@mui/material";
 import MusicNoteIcon from "@mui/icons-material/MusicNote";
+import logo  from '../Asserts/logo-no-background.png'
 const Navbar = () => {
   // const user = useSelector(getUser);
   const { handleLogout,user } = useStates();
@@ -26,9 +27,10 @@ const Navbar = () => {
     <>
       <div className="h-screen bg-mp-violet w-60 fixed max-xl:w-40">
         <div className="font-alata flex items-center font-semibold text-2xl h-14 absolute">
-          <MusicNoteIcon className="text-mp-green ml-2" />
+          {/* <MusicNoteIcon className="text-mp-green ml-2" /> */}
           <span className="text-mp-white">
-            Mu<span className="text-mp-green">sic</span>
+            {/* Mu<span className="text-mp-green">sic</span> */}
+            <img className="w-52 object-contain -ml-5" src={logo} alt="" />
           </span>
         </div>
         {/* {user == null ? (
@@ -42,7 +44,7 @@ const Navbar = () => {
             </Button>
           </div>
         ) : ( */}
-          <div className="flex flex-col justify-between items-center h-full py-10">
+          <div className="flex flex-col justify-between items-center h-full py-10 my-7">
             <div className="">
               <ul
                 // role={"list"}
@@ -81,7 +83,7 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-            <div className="flex items-center mb-16 flex-col">
+            <div className="flex items-center mb-24 flex-col">
               <Button
                 className="text-mp-white"
                 variant="contained"

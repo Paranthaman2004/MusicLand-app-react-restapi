@@ -14,6 +14,7 @@ import { RiFullscreenFill } from "react-icons/ri";
 import ViewSongInAdmin from "../Components/ViewSongInAdmin";
 import ViewHeroSongs from "../Components/ViewHeroSongs";
 import ViewMovieSongs from "../Components/ViewMovieSongs";
+import logo from "../Asserts/logo-no-background.png";
 const ViewAllSong = () => {
   const {
     curSong,
@@ -43,7 +44,7 @@ const ViewAllSong = () => {
       .then((result) => {
         setAllSongs(result);
       });
-      if (allSongs.length === 0) setAllSongs(allSongsjson);
+    if (allSongs.length === 0) setAllSongs(allSongsjson);
   };
   useEffect(() => {
     getAllSongs();
@@ -91,13 +92,14 @@ const ViewAllSong = () => {
         {isViewHero && <ViewHeroSongs />}
         {isViewMovie && <ViewMovieSongs />}
       </div>
-      <div className="font-alata flex items-center font-semibold text-4xl mt-10 absolute">
-        <MusicNoteIcon
+      <div className="font-alata flex items-center font-semibold text-4xl absolute">
+        {/* <MusicNoteIcon
           className="text-mp-green ml-2"
           sx={{ fontSize: "35px" }}
-        />
+        /> */}
         <span className="text-mp-white">
-          Mu<span className="text-mp-violet">sick</span>
+          {/* Mu<span className="text-mp-violet">sick</span> */}
+          <img className="w-52 object-contain" src={logo} alt="" />
         </span>
       </div>
       <h2 className="font-alata text-4xl flex justify-center font-bold mt-6">
